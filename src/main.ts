@@ -20,7 +20,16 @@ const i18n = createI18n({
     locale: navigator.language
 });
 
+export let supportOS = false;
 
+//@ts-ignore
+const ua = await navigator.userAgentData?.getHighEntropyValues(["platformVersion"]);
+if(!ua || ua.platform != 'Windows' || (ua.platformVersion?.split('.')[0] ?? 0) <= 0) {
+    supportOS = false;
+    console.error('current platform is not supported.')
+} else {
+    supportOS = true;
+}
 //(window as any).isEmbedded = true;
 
 createApp(App)

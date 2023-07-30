@@ -11,7 +11,7 @@
           <li class="nav-item">
             <a class="nav-link"></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" v-if="supportOS">
             <a class="nav-link"
             href="https://github.com/hkmodmanager/HKModManager/releases/latest">{{ $t('nav.download') }}</a>
           </li>
@@ -49,7 +49,7 @@
 </style>
 
 <script setup lang="ts">
-
+import { supportOS } from './main';
 const shouldShowNavbar = (window as any).isEmbedded != true;
 
 </script>

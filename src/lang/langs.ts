@@ -11,7 +11,9 @@ export default {
         home: {
             publishMod: "发布Mod",
             publishModpack: "发布Modpack",
-            startModding: "Modding文档"
+            startModding: "Modding文档",
+            notsupported: "HKMM不支持当前平台",
+            supportPlatform: "支持的平台：Windows 10+"
         }
     },
     en: {
@@ -25,7 +27,9 @@ export default {
         home: {
             publishMod: "Publish mod",
             publishModpack: "Publish modpack",
-            startModding: "Modding Docs"
+            startModding: "Modding Docs",
+            notsupported: "Current platform is not supported",
+            supportPlatform: "Supported platforms: Windows 10+"
         }
     }
 };
