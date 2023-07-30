@@ -6,4 +6,7 @@ html[data-bs-theme="dark"]{
     .css-placeholder {
         display: block;
     }
+    .logo-svg-r {
+        filter: invert(100%);
+    }
 }

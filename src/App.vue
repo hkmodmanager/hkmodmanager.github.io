@@ -17,7 +17,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link"
-              href="https://discord.gg/hkmodding">
+              href="https://discord.gg/VDsg3HmWuB">
               <i class="bi bi-discord" /> <small>Discord</small>
             </a>
           </li>
@@ -31,6 +31,11 @@
       </div>
     </div>
   </nav>
+  <div class="alert alert-danger" 
+    v-if="shouldShowNavbar && !supportOS">
+    <span v-html="$t('nav.notsupported')" />
+    
+  </div>
   <div class="app">
     <router-view />
   </div>

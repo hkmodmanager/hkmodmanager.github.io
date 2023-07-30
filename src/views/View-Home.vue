@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="col m-2">
-                    <a class="btn btn-dark w-100 d-flex flex-column" href="https://discord.gg/hkmodding">
+                    <a class="btn btn-dark w-100 d-flex flex-column" href="https://discord.gg/VDsg3HmWuB">
                         <i class="bi bi-discord w-100" style="font-size: 5em"/>
                         <h5 class="w-100">Discord</h5>
                     </a>
