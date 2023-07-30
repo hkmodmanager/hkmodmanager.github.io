@@ -54,7 +54,26 @@
 </style>
 
 <script setup lang="ts">
+import { onBeforeMount, onBeforeUpdate } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { onBeforeRouteUpdate } from 'vue-router';
 import { supportOS } from './main';
+const i18n = useI18n();
 const shouldShowNavbar = window.parent == window.self;
+
+function checkLang() {
+  console.log("Check lang");
+  const url = new URL(window.location.href);
+  const lang = url.searchParams.get('lang');
+  console.log(url);
+  if(lang) {
+    console.log("Change lang: " + lang);
+    i18n.locale.value = lang;
+  }
+}
+
+onBeforeRouteUpdate(checkLang);
+onBeforeUpdate(checkLang);
+onBeforeMount(checkLang);
 
 </script>
