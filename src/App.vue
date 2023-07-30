@@ -55,6 +55,6 @@
 
 <script setup lang="ts">
 import { supportOS } from './main';
-const shouldShowNavbar = (window as any).isEmbedded != true;
+const shouldShowNavbar = window.parent != window.self;
 
 </script>

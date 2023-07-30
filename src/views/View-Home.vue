@@ -87,7 +87,7 @@ import { onBeforeMount, onUpdated } from 'vue';
 import { useRoute } from 'vue-router';
 import { supportOS } from '@/main';
 
-const isEmbedded = (window as any).isEmbedded == true;
+const isEmbedded = window.parent != window.self;
 
 function check() {
     if (isEmbedded) return;
