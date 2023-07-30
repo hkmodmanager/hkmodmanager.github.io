@@ -55,6 +55,6 @@
 
 <script setup lang="ts">
 import { supportOS } from './main';
-const shouldShowNavbar = window.parent != window.self;
+const shouldShowNavbar = window.parent == window.self;
 
 </script>
