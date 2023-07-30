@@ -1,6 +1,18 @@
 
-[data-bs-theme="light"] {
+html[data-bs-theme="light"] {
+    .app {
+        color: black;
+    }
     .logo-svg {
         filter: invert(100%);
+    }
+    .btn-dark {
+        --bs-btn-color: black;
+        --bs-btn-hover-color: black;
+        --bs-btn-bg: #00000000;
+        --bs-btn-border-color: #00000000;
+        --bs-btn-hover-border-color: #00000000;
+        --bs-btn-active-border-color: #00000000;
+        --bs-btn-hover-bg: #42464930;
     }
 }

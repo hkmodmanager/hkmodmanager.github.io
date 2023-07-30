@@ -2,7 +2,13 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
+    name: "home",
     path: "/",
+    component: () => import("@/views/View-Home.vue")
+  },
+  {
+    name: "get-command",
+    path: "/command/:cmd(.*)*",
     component: () => import("@/views/View-Home.vue")
   },
   {
@@ -12,7 +18,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/tools/skin",
     component: () => import("@/views/Tools/View-T-Skin.vue")
-  }
+  },
 ]
 
 const router = createRouter({
